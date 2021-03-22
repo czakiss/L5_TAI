@@ -36,7 +36,6 @@ class Complex{
         return `${this.real} + ${this.imaginary}i`;
     }
 }
-console.log("XD");
 
 let num1 = new Complex(1,1);
 console.log(num1.toString());
