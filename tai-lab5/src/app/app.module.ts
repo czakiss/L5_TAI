@@ -13,6 +13,7 @@ import { BlogItemComponent } from './components/blog-item/blog-item.component';
 import { BlogItemImageComponent } from './components/blog-item-image/blog-item-image.component';
 import { BlogItemTextComponent } from './components/blog-item-text/blog-item-text.component';
 import { BlogItemDetailsComponent } from './components/blog-item-details/blog-item-details.component';
+import { SummaryPipe } from './pipes/summary.pipe';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BlogItemDetailsComponent } from './components/blog-item-details/blog-it
     BlogItemImageComponent,
     BlogItemTextComponent,
     BlogItemDetailsComponent,
+    SummaryPipe,
   ],
   imports: [
     BrowserModule,
