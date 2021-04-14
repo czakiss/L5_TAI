@@ -7,6 +7,12 @@ import { ContactComponent } from './components/contact/contact.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import {HttpClientModule} from "@angular/common/http";
+import {DataService} from "./services/data.service";
+import { BlogItemComponent } from './components/blog-item/blog-item.component';
+import { BlogItemImageComponent } from './components/blog-item-image/blog-item-image.component';
+import { BlogItemTextComponent } from './components/blog-item-text/blog-item-text.component';
+import { BlogItemDetailsComponent } from './components/blog-item-details/blog-item-details.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +20,20 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ContactComponent,
     BlogComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    BlogItemComponent,
+    BlogItemImageComponent,
+    BlogItemTextComponent,
+    BlogItemDetailsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
