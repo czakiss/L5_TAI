@@ -9,11 +9,10 @@ import {BlogHomeComponent} from "./components/blog-home/blog-home.component";
 const routes: Routes = [
   { path: 'blog-component', component: BlogHomeComponent },
   { path: 'contact-component', component: ContactComponent },
+  { path: 'blog/detail/:id',component: BlogItemDetailsComponent },
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: '**', component: HomeComponent },
-  {path: 'blog/detail/:id',
-    component: BlogItemDetailsComponent
-  }
+
 ];
 
 @NgModule({
